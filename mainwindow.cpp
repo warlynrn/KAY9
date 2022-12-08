@@ -51,39 +51,48 @@ MainWindow::~MainWindow()
 //Schedule fucntionality
 void MainWindow::on_setintbut_clicked()
 {
+    //===== Set type of scan/update 
     QString scantype = "";
     if(ui->rBFullScan_SS->isChecked()) {Scheduled_scantype = "fullscan"; scantype="Full Scan";}
     else if(ui->rBQuickScan_SS->isChecked()) {Scheduled_scantype = "quickscan";scantype="Quick Scan";}
     else if(ui->rBRDB_SS->isChecked()) {Scheduled_scantype = "rdb";scantype="Refresh Database";}
     else{
-        Scheduled_Path = ui->fileselect_2->toPlainText();
-        Scheduled_Path.replace("/","\\");
+        Scheduled_Path = ui->fileselect_2->toPlainText();   //display on ui
+        Scheduled_Path.replace("/","\\");   //syntax correction
         Scheduled_scantype="fdscan";
         if(ui->cB_SelectedDirectory_2->isChecked()) Scheduled_recursive = false;   //recursive option
         scantype="Manual Scan";
-    }
+    } //if end
 
+    //=== collect values
     int hrs = ui->hoursel->value();
     int min = ui->minsel->value();
     std::string display = "Hour(s): " + std::to_string(hrs) + " / Minute(s): " + std::to_string(min);
-    ui->intdisplay->setText(scantype+" every "+QString::fromStdString(display));
+    ui->intdisplay->setText(scantype+" every "+QString::fromStdString(display));    //display interval set
 
-    //transfor to miliseconds
+    //====== transfor to miliseconds
     int mshrs = hrs*60*60*1000;
     int msmin = min*60*1000;
     int total = mshrs + msmin;
 
+    //==== set interval
     timer->setInterval(total);  //set interval
+
+    //=== connect the timer to the trigger
     connect(timer, &QTimer::timeout,this,[=](){
         if(!m_scan.m_running){      //run only if it is not running already
+            //===== collect data saved
             scheduled = true;
             m_scan.setPath(Scheduled_Path);
             m_scan.m_scantype = Scheduled_scantype;
+
+            //==== start 
             m_scan.start();
         }
     });
+    //starts timer
     timer->start();
-}
+} //
 
 //quick-full scan start
 void MainWindow::on_btnStartScan_FQ_clicked()
@@ -96,7 +105,7 @@ void MainWindow::on_btnStartScan_FQ_clicked()
 
     //start
     m_scan.start();
-}
+} //
 
 //manual scan start
 void MainWindow::on_scanbut_clicked()
@@ -106,7 +115,7 @@ void MainWindow::on_scanbut_clicked()
     scheduled = false;
     m_scan.start();
     ui->scanstatus->setValue(0);
-}
+} //
 
 //Refresh DB/Clam start
 void MainWindow::on_btnRefreshDB_clicked()
@@ -114,10 +123,12 @@ void MainWindow::on_btnRefreshDB_clicked()
     scheduled=false;
     m_scan.m_scantype="rdb";
     m_scan.start();
-}
+} //
 
+//once the process is completed
 void MainWindow::completed()
 {
+    //collect howmany virus were found
     QString virusesnum = "";
     QString ProcessType = "";
     bool quarantine  = false;
@@ -136,12 +147,17 @@ void MainWindow::completed()
             quarantine = true;
             virus_alert_change("Viruses were found. Please visit Quarantine");
         }
-    }
+    } //end if
+
+    //if it was a completed scheduled scan do not 
+    //show dialog box
     if(!scheduled && m_scan.m_scantype!="rdb"){
         QMessageBox completedmsg;
         completedmsg.setText(ProcessType+" Finished");
         completedmsg.setIcon(QMessageBox::Information);
         completedmsg.setInformativeText(virusesnum+" Virus were found");
+        
+        //==== if virus were found show quarantine button
         if(quarantine){
             QAbstractButton *pBtnQuarantine = completedmsg.addButton(tr("Quarantine"),QMessageBox::NoRole);
             completedmsg.exec();
@@ -153,7 +169,7 @@ void MainWindow::completed()
 
         } else {
             completedmsg.exec();
-        }
+        } //end if
     } else if(!scheduled){
         ProcessType="Refresh Database";
         QMessageBox completedmsg;
@@ -161,26 +177,46 @@ void MainWindow::completed()
         completedmsg.setIcon(QMessageBox::Information);
         completedmsg.setInformativeText("Database updated correctly.");
         completedmsg.exec();
-    }
+    } //end if
 
-}
+} //completed()
 
 //============== Support ===============//
+//on_fileselect_textChanged allows the user to
+//select a file
 void MainWindow::on_fileselect_textChanged(){
     QString c_path = ui->fileselect->toPlainText();
     c_path.replace("/","\\");
     m_scan.setPath(c_path);
 }
 
+//allows the user to select a file
+void MainWindow::on_filebut_clicked()
+{
+    QString filename = QFileDialog::getOpenFileNames(
+        this,
+        tr("Open File"),
+        "C://",
+        "All Files (*.*);;"
+    ).join("");
+    ui ->fileselect->setText(filename.toUtf8());
+}
+
+//=== insertToQList inserts all file from QVirus to
+//the widget list in quarantine
 void MainWindow::insertToQList(){
     //quarantineList
     ui->quarantineList->clear();
     QDir dir(".\\QVirus");
+
+    //for each file
     for(const QFileInfo &file : dir.entryInfoList(QDir::Files)){
         ui->quarantineList->addItem(file.fileName());
     }
-}
+}//insertToQList
 
+// on_quarantine_delet_all_clicked deletes the virus
+// under QVirus
 void MainWindow::on_quarantine_delet_all_clicked()
 {
     //for (item in range(ui->quarantineList->count()){}
@@ -188,21 +224,22 @@ void MainWindow::on_quarantine_delet_all_clicked()
         QString filepath = ".\\QVirus\\";
         filepath.append(ui->quarantineList->item(item)->text());
         QFile file(filepath);
-        file.remove();
+        file.remove();  //remove local file
     }
-    insertToQList();
+    insertToQList();    //update widget list
 }
 
-
+//deletes selected virus from quarantine
 void MainWindow::on_quarantine_delete_selected_clicked()
 {
     QString filepath = ".\\QVirus\\";
     filepath.append(ui->quarantineList->currentItem()->text());
     QFile file(filepath);
     file.remove();
-    insertToQList();
+    insertToQList();    //updates list
 }
 
+//stop button
 void MainWindow::on_btnStopScan_FQ_clicked()
 {
     m_scan.stop();
@@ -224,18 +261,6 @@ void MainWindow::on_dirbut_clicked()
 {
     QString filename = QFileDialog::getExistingDirectory(this,"Choose Folder");
     ui ->fileselect->setText(filename.toUtf8());   //update text
-}
-
-//allows the user to select a file
-void MainWindow::on_filebut_clicked()
-{
-    QString filename = QFileDialog::getOpenFileNames(
-        this,
-        tr("Open File"),
-        "C://",
-        "All Files (*.*);;"
-    ).join("");
-    ui ->fileselect->setText(filename.toUtf8());
 }
 
 void MainWindow::on_dirbut_2_clicked()
@@ -332,6 +357,7 @@ void MainWindow::on_cancelbut_clicked()
 }
 
 //===================== outputs ======================//
+//update Bar in all screens
 void MainWindow::pbar_output(int data)
 {
     ui->scanstatus->setValue(data);
@@ -343,6 +369,7 @@ void MainWindow::pbar_output(int data)
     emit output("curent %: "+QString::number(data));
 }
 
+//updates running_process in all the screens
 void MainWindow::currently_running_output()
 {
     QString _running;
@@ -370,7 +397,6 @@ void MainWindow::currently_running_output()
 
 void MainWindow::output2(QString data){
     ui->plainTextEdit_2->appendPlainText(data);
-
 }
 
 void MainWindow::output(QString data)
