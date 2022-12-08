@@ -1,0 +1,3 @@
+%USERPROFILE%\Downloads
+%USERPROFILE%\Desktop
+%USERPROFILE%\AppData\Local\Temp

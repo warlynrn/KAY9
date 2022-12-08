@@ -1,0 +1,2438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>-20</y>
+      <width>801</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="openingpage">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 98, 72);
+border-color: rgb(0, 0, 0);</string>
+     </property>
+     <widget class="QPushButton" name="open">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>440</y>
+        <width>281</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+border: 4px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Open Application</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exit">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>510</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+border: 4px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="logo">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>20</y>
+        <width>301</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../Downloads/pixil-frame-0.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="app_title">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>350</y>
+        <width>211</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>60</pointsize>
+        <bold>false</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>KAY-9</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>20</y>
+        <width>311</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>540</y>
+        <width>801</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>801</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>801</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>520</y>
+        <width>801</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>30</y>
+        <width>351</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <zorder>line_6</zorder>
+     <zorder>line_5</zorder>
+     <zorder>line_4</zorder>
+     <zorder>line_3</zorder>
+     <zorder>line_2</zorder>
+     <zorder>line</zorder>
+     <zorder>open</zorder>
+     <zorder>logo</zorder>
+     <zorder>app_title</zorder>
+     <zorder>exit</zorder>
+    </widget>
+    <widget class="QWidget" name="manualscan">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 98, 72);</string>
+     </property>
+     <widget class="QTextBrowser" name="fileselect">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>150</y>
+        <width>531</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+alternate-background-color: rgb(85, 0, 127);
+border: 2px solid black;
+font: 900 12pt &quot;Segoe UI&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="filebut">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>150</y>
+        <width>151</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Browse File...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="dirbut">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>170</y>
+        <width>151</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Browse Directory...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="manscantitle">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>90</y>
+        <width>321</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>36</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 3px solid black;</string>
+      </property>
+      <property name="text">
+       <string>Manual-Scan:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backbut2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Go Back</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="scanbut">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>190</y>
+        <width>111</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Scan</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="scanstatus">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>441</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);
+selection-color: rgb(85, 0, 127);
+border: 1px solid white;
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+     <widget class="Line" name="mp_bp">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>520</y>
+        <width>801</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="mp_tp">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>801</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="mp_tb">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>0</y>
+        <width>811</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="mp_bb">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>540</y>
+        <width>801</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="maninfo">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>360</y>
+        <width>661</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border: 4px solid black;
+font: 900 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="stopbut_ms">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>220</y>
+        <width>111</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="text_logs_ms">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>310</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>26</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 26pt &quot;Bauhaus 93&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Logs:</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="text_infectedFiles_ms">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>260</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+font: 900 20pt &quot;Impact&quot;;
+color:rgb(255, 0, 0);
+border: 2px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="text_logs_ms_3">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>260</y>
+        <width>231</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>26</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 26pt &quot;Bauhaus 93&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Infected Files:</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cB_SelectedDirectory">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>210</y>
+        <width>201</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Only Selected Directory</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="Currently_running_4">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>30</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color:rgb(0, 0, 0);
+background-color: rgb(0, 98, 72);
+color:rgb(0, 255, 0);
+font: 700 12pt &quot;Segoe UI&quot;;
+border-style:inset;
+border: 1px solid white;</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="virus_alert_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>540</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color:rgb(255, 0, 0);
+border-style:inset;
+border: 1px solid black;
+background-color: rgb(0, 0, 0);
+</string>
+      </property>
+     </widget>
+     <zorder>mp_tp</zorder>
+     <zorder>mp_tb</zorder>
+     <zorder>fileselect</zorder>
+     <zorder>filebut</zorder>
+     <zorder>dirbut</zorder>
+     <zorder>manscantitle</zorder>
+     <zorder>backbut2</zorder>
+     <zorder>scanbut</zorder>
+     <zorder>scanstatus</zorder>
+     <zorder>mp_bp</zorder>
+     <zorder>mp_bb</zorder>
+     <zorder>maninfo</zorder>
+     <zorder>stopbut_ms</zorder>
+     <zorder>text_logs_ms</zorder>
+     <zorder>text_infectedFiles_ms</zorder>
+     <zorder>text_logs_ms_3</zorder>
+     <zorder>cB_SelectedDirectory</zorder>
+     <zorder>Currently_running_4</zorder>
+     <zorder>virus_alert_5</zorder>
+    </widget>
+    <widget class="QWidget" name="scheduledpage">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 98, 72);</string>
+     </property>
+     <widget class="QLabel" name="shceduletitle">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>271</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>36</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 3px solid black;</string>
+      </property>
+      <property name="text">
+       <string>Scheduled:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="hours">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>420</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Bauhaus 93&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Hour(s):</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minutes">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>450</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Bauhaus 93&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Minute(s):</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="hoursel">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>414</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+border: 4px solid black;</string>
+      </property>
+      <property name="maximum">
+       <number>23</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="setintbut">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>450</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Bauhaus 93&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Set Time Interval</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="intdisplay">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>410</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI&quot;;
+border: 4px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="curint">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>370</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>20</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 20pt &quot;Bauhaus 93&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Current Interval:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cancelbut">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>450</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Bauhaus 93&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Cancel Scan</string>
+      </property>
+     </widget>
+     <widget class="Line" name="sp_tp">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>801</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="sp_bb">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>540</y>
+        <width>801</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="sp_tb">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>811</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="minsel">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>450</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+border: 4px solid black;</string>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>59</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backbut_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Go Back</string>
+      </property>
+     </widget>
+     <widget class="Line" name="sp_bp">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>520</y>
+        <width>811</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="scanstatus_6">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>441</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);
+selection-color: rgb(85, 0, 127);
+border: 1px solid white;
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="Currently_running_6">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>30</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color:rgb(0, 0, 0);
+background-color: rgb(0, 98, 72);
+color:rgb(0, 255, 0);
+font: 700 12pt &quot;Segoe UI&quot;;
+border-style:inset;
+border: 1px solid white;</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rBFullScan_SS">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>180</y>
+        <width>231</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Bauhaus 93&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Full Scan</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rBQuickScan_SS">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>220</y>
+        <width>231</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Bauhaus 93&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Quick Scan</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rBManual_SS">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>260</y>
+        <width>231</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Bauhaus 93&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Manual Scan</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="fileselect_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>310</y>
+        <width>531</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+alternate-background-color: rgb(85, 0, 127);
+font: 12pt &quot;Impact&quot;;
+border: 4px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="dirbut_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>310</y>
+        <width>171</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Bauhaus 93&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Browse Directory...</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cB_SelectedDirectory_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>280</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Only Selected Directory</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="virus_alert">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>540</y>
+        <width>256</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(0, 0, 0);
+font: 700 10pt &quot;Segoe UI&quot;;
+color:rgb(255, 0, 0);
+border-style:inset;</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="virus_alert_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>540</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color:rgb(255, 0, 0);
+border-style:inset;
+border: 1px solid black;
+background-color: rgb(0, 0, 0);
+</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rBRDB_SS">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>190</y>
+        <width>251</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Bauhaus 93&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Refresh Database</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="shceduletitle_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>150</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>28</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 28pt &quot;Bauhaus 93&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Scans:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="shceduletitle_3">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>150</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>28</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 28pt &quot;Bauhaus 93&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Refresh:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="shceduletitle_4">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>370</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>28</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 28pt &quot;Bauhaus 93&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Interval:</string>
+      </property>
+     </widget>
+     <zorder>shceduletitle</zorder>
+     <zorder>hours</zorder>
+     <zorder>minutes</zorder>
+     <zorder>hoursel</zorder>
+     <zorder>setintbut</zorder>
+     <zorder>intdisplay</zorder>
+     <zorder>curint</zorder>
+     <zorder>cancelbut</zorder>
+     <zorder>sp_tp</zorder>
+     <zorder>sp_tb</zorder>
+     <zorder>minsel</zorder>
+     <zorder>backbut_4</zorder>
+     <zorder>sp_bp</zorder>
+     <zorder>sp_bb</zorder>
+     <zorder>scanstatus_6</zorder>
+     <zorder>Currently_running_6</zorder>
+     <zorder>rBFullScan_SS</zorder>
+     <zorder>rBQuickScan_SS</zorder>
+     <zorder>rBManual_SS</zorder>
+     <zorder>fileselect_2</zorder>
+     <zorder>dirbut_2</zorder>
+     <zorder>cB_SelectedDirectory_2</zorder>
+     <zorder>virus_alert</zorder>
+     <zorder>virus_alert_7</zorder>
+     <zorder>rBRDB_SS</zorder>
+     <zorder>shceduletitle_2</zorder>
+     <zorder>shceduletitle_3</zorder>
+     <zorder>shceduletitle_4</zorder>
+    </widget>
+    <widget class="QWidget" name="quarantine">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 98, 72);</string>
+     </property>
+     <widget class="QPushButton" name="goback">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="text">
+       <string>Go Back</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="quarantinedlabel">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>90</y>
+        <width>421</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>36</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 3px solid black;</string>
+      </property>
+      <property name="text">
+       <string>Quarantined Files:</string>
+      </property>
+     </widget>
+     <widget class="Line" name="qp_bb">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>540</y>
+        <width>801</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="qp_tb">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>801</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="qp_tp">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>811</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="qp_bp">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>520</y>
+        <width>811</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="quarantineList">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>150</y>
+        <width>711</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(255, 255, 255);
+font: 18pt &quot;Segoe UI&quot;;
+border: 4px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backbut_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Go Back</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quarantine_delet_all">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>470</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Delete All Virus</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quarantine_delete_selected">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>470</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Delete Selected Virus</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="scanstatus_7">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>441</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);
+selection-color: rgb(85, 0, 127);
+border: 1px solid white;
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="Currently_running_5">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>30</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color:rgb(0, 0, 0);
+background-color: rgb(0, 98, 72);
+color:rgb(0, 255, 0);
+font: 700 12pt &quot;Segoe UI&quot;;
+border-style:inset;
+border: 1px solid white;</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="virus_alert_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>540</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color:rgb(255, 0, 0);
+border-style:inset;
+border: 1px solid black;
+background-color: rgb(0, 0, 0);
+</string>
+      </property>
+     </widget>
+     <zorder>qp_tp</zorder>
+     <zorder>goback</zorder>
+     <zorder>quarantinedlabel</zorder>
+     <zorder>qp_tb</zorder>
+     <zorder>qp_bp</zorder>
+     <zorder>qp_bb</zorder>
+     <zorder>quarantineList</zorder>
+     <zorder>backbut_8</zorder>
+     <zorder>quarantine_delet_all</zorder>
+     <zorder>quarantine_delete_selected</zorder>
+     <zorder>scanstatus_7</zorder>
+     <zorder>Currently_running_5</zorder>
+     <zorder>virus_alert_6</zorder>
+    </widget>
+    <widget class="QWidget" name="logs">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 98, 72);</string>
+     </property>
+     <widget class="QPushButton" name="backbut_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Go Back</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="log_title">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>90</y>
+        <width>381</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>26</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 3px solid black;</string>
+      </property>
+      <property name="text">
+       <string>Scan Reports and Logs:</string>
+      </property>
+     </widget>
+     <widget class="Line" name="lp_tb">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>801</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="lp_bb">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>540</y>
+        <width>801</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="lp_tp">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>801</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="lp_bp">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>520</y>
+        <width>801</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="plainTextEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>140</y>
+        <width>671</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border: 4px solid black;
+font: 900 14pt &quot;Segoe UI&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="scanstatus_3">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>441</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);
+selection-color: rgb(85, 0, 127);
+border: 1px solid white;
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="Currently_running_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>30</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color:rgb(0, 0, 0);
+background-color: rgb(0, 98, 72);
+color:rgb(0, 255, 0);
+font: 700 12pt &quot;Segoe UI&quot;;
+border-style:inset;
+border: 1px solid white;</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="virus_alert_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>540</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color:rgb(255, 0, 0);
+border-style:inset;
+border: 1px solid black;
+background-color: rgb(0, 0, 0);
+</string>
+      </property>
+     </widget>
+     <zorder>lp_tp</zorder>
+     <zorder>lp_bp</zorder>
+     <zorder>lp_bb</zorder>
+     <zorder>log_title</zorder>
+     <zorder>lp_tb</zorder>
+     <zorder>backbut_2</zorder>
+     <zorder>plainTextEdit_2</zorder>
+     <zorder>scanstatus_3</zorder>
+     <zorder>Currently_running_3</zorder>
+     <zorder>virus_alert_4</zorder>
+    </widget>
+    <widget class="QWidget" name="action">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 98, 72);</string>
+     </property>
+     <widget class="QPushButton" name="quickscanbut">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>90</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 2px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Quick - Full 
+ Scan</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="manualscanbut">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>90</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 2px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Manual-Scan</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="scheduledbut">
+      <property name="geometry">
+       <rect>
+        <x>75</x>
+        <y>315</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 2px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Scheduled-Scan</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="reportsbut">
+      <property name="geometry">
+       <rect>
+        <x>525</x>
+        <y>315</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 2px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Reports and Logs</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quarantinebut">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>315</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 2px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Quarantine</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backbut">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Go Back</string>
+      </property>
+     </widget>
+     <widget class="Line" name="ap_tb">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>801</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="ap_bb">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>540</y>
+        <width>801</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="ap_bp">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>520</y>
+        <width>801</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="ap_tp">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>801</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnStopScan">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>530</y>
+        <width>131</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 98, 72);
+border: 1px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Stop Scan</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="scanstatus_5">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>441</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);
+selection-color: rgb(85, 0, 127);
+border: 1px solid white;
+font: 700 12pt &quot;Segoe UI&quot;;
+</string>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnRefreshDB">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>90</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 2px solid white;</string>
+      </property>
+      <property name="text">
+       <string>Refresh 
+ Database</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="Currently_running_2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>30</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color:rgb(0, 0, 0);
+background-color: rgb(0, 98, 72);
+color:rgb(0, 255, 0);
+font: 700 12pt &quot;Segoe UI&quot;;
+border-style:inset;
+border: 1px solid white;</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="virus_alert_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>540</y>
+        <width>311</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color:rgb(255, 0, 0);
+border-style:inset;
+border: 1px solid black;
+background-color: rgb(0, 0, 0);
+</string>
+      </property>
+     </widget>
+     <zorder>ap_tp</zorder>
+     <zorder>ap_bp</zorder>
+     <zorder>ap_tb</zorder>
+     <zorder>quickscanbut</zorder>
+     <zorder>manualscanbut</zorder>
+     <zorder>scheduledbut</zorder>
+     <zorder>reportsbut</zorder>
+     <zorder>quarantinebut</zorder>
+     <zorder>backbut</zorder>
+     <zorder>ap_bb</zorder>
+     <zorder>btnStopScan</zorder>
+     <zorder>scanstatus_5</zorder>
+     <zorder>btnRefreshDB</zorder>
+     <zorder>Currently_running_2</zorder>
+     <zorder>virus_alert_3</zorder>
+    </widget>
+    <widget class="QWidget" name="FullandQuick_Scan">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 98, 72);</string>
+     </property>
+     <widget class="Line" name="mp_tb_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>811</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="mp_tb_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>530</y>
+        <width>811</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="manscantitle_3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>381</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>36</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 3px solid black;</string>
+      </property>
+      <property name="text">
+       <string>Quick - Full Scan</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnStartScan_FQ">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>290</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;
+</string>
+      </property>
+      <property name="text">
+       <string>Start Scan</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnStopScan_FQ">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>290</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;
+</string>
+      </property>
+      <property name="text">
+       <string>Stop Scan</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rBFullScan">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>180</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>28</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 28pt &quot;Bauhaus 93&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Full Scan</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rBQuickScan">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>230</y>
+        <width>231</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 28pt &quot;Bauhaus 93&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Quick Scan</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnLogs_FQ">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>420</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;
+</string>
+      </property>
+      <property name="text">
+       <string>Logs and Report</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnquarantine_FQ">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>420</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;
+</string>
+      </property>
+      <property name="text">
+       <string>Quarantine</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backbut_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 127);
+border: 1px solid white;
+</string>
+      </property>
+      <property name="text">
+       <string>Go Back</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="text_logs_ms_4">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>340</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bauhaus 93</family>
+        <pointsize>20</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 20pt &quot;Bauhaus 93&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Infected Files:</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="text_infectedFiles_fq">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>350</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+font: 900 20pt &quot;Impact&quot;;
+color:rgb(255, 0, 0);
+border: 2px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="scanstatus_4">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>441</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);
+selection-color: rgb(85, 0, 127);
+border: 1px solid white;
+font: 700 12pt &quot;Segoe UI&quot;;
+</string>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="Currently_running">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>30</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color:rgb(0, 0, 0);
+background-color: rgb(0, 98, 72);
+color:rgb(0, 255, 0);
+font: 700 12pt &quot;Segoe UI&quot;;
+border-style:inset;
+border: 1px solid white;</string>
+      </property>
+     </widget>
+     <widget class="Line" name="mp_bp_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>801</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="mp_bp_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>500</y>
+        <width>801</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="virus_alert_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>540</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color:rgb(255, 0, 0);
+border-style:inset;
+border: 1px solid black;
+background-color: rgb(0, 0, 0);
+</string>
+      </property>
+     </widget>
+     <zorder>mp_bp_4</zorder>
+     <zorder>mp_bp_3</zorder>
+     <zorder>mp_tb_3</zorder>
+     <zorder>mp_tb_4</zorder>
+     <zorder>manscantitle_3</zorder>
+     <zorder>btnStartScan_FQ</zorder>
+     <zorder>btnStopScan_FQ</zorder>
+     <zorder>rBFullScan</zorder>
+     <zorder>rBQuickScan</zorder>
+     <zorder>btnLogs_FQ</zorder>
+     <zorder>btnquarantine_FQ</zorder>
+     <zorder>text_logs_ms_4</zorder>
+     <zorder>text_infectedFiles_fq</zorder>
+     <zorder>Currently_running</zorder>
+     <zorder>virus_alert_2</zorder>
+     <zorder>scanstatus_4</zorder>
+     <zorder>backbut_7</zorder>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
